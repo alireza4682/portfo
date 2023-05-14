@@ -2,6 +2,7 @@ import SkillsIcon from "./skillsIcon.component";
 
 import typescriptLogo from "../assets/typescript-icon.svg";
 import reactLogo from "../assets/react.svg";
+import javascript from "../assets/javascript.svg"
 
 const SkillsContainer = () => {
   return (
@@ -10,6 +11,7 @@ const SkillsContainer = () => {
       <div className="m-1 flex">
         <SkillsIcon svgIcon={typescriptLogo} name={"typescript"} />
         <SkillsIcon svgIcon={reactLogo} name={"react"} />
+        <SkillsIcon svgIcon={javascript} name={"javascript"}/>
       </div>
     </div>
   );
