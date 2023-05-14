@@ -39,28 +39,28 @@ const Intro = () => {
       </div>
       <div className="w-4/5">
         <div className="text-center">prefered stack:</div>
-        <div className="p-1 border-2 border-white rounded-lg grid grid-cols-3 m-2">
-          <div className="rounded-full flex justify-center items-center w-16 h-16 bg-white m-2">
+        <div className="p-1 border-2 border-white rounded-lg grid grid-cols-3 m-2 ">
+          <div className="rounded-full flex  w-16 h-16 bg-white m-2 self-center justify-self-center">
             <img
               src={nextjsLogo}
               alt="nextjsLogo"
               className="  w-16 h-16 p-0.5"
             />
           </div>
-          <div className="rounded-full flex justify-center items-center w-16 h-16 bg-white m-2">
+          <div className="rounded-full flex justify-center items-center w-16 h-16 bg-white m-2 self-center justify-self-center">
             <img src={reactLogo} alt="reactLogo" className="w-16 h-16 p-1" />
           </div>
-          <div className="rounded-full flex justify-center items-center w-16 h-16 bg-white m-2">
+          <div className="rounded-full flex justify-center items-center w-16 h-16 bg-white m-2 self-center justify-self-center">
             <img src={reduxLogo} alt="reduxLogo" className="w-16 h-16 p-1" />
           </div>
-          <div className="rounded-full flex justify-center items-center w-16 h-16 bg-white m-2">
+          <div className="rounded-full flex justify-center items-center w-16 h-16 bg-white m-2 self-center justify-self-center">
             <img
               src={tailwindLogo}
               alt="tailwindLogo"
               className="w-16 h-16 p-1"
             />
           </div>
-          <div className="bg-white w-16 h-16 m-2 rounded-lg">
+          <div className="bg-white w-16 h-16 m-2 rounded-lg self-center justify-self-center">
             <img
               src={typescriptLogo}
               alt="typescriptLogo"
@@ -68,7 +68,7 @@ const Intro = () => {
             />
           </div>
 
-          <div className="w-16 h-16 m-2 rounded-lg">
+          <div className="w-16 h-16 m-2 rounded-lg self-center justify-self-center">
             <img
               src={supabaseLogo}
               alt="supabaseLogo"
