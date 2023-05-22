@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Skills from "./components/skills.component";
 import Intro from "./components/intro.component";
+import WorkSection from "./components/workSection.component";
 
 function App() {
   useEffect(() => {
@@ -39,6 +40,7 @@ function App() {
           {theme}
         </button>
         <Skills />
+        <WorkSection />
       </div>
     </div>
   );

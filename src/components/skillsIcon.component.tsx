@@ -7,7 +7,7 @@ const SkillsIcon = ({ svgIcon, name }: TsvgIcon) => {
   return (
     <div
       className="bg-gray-200 p-1 px-2 m-1 
-                  flex flex-row justify-between w-fit gap-2 items-center rounded-2xl "
+                  flex flex-row justify-between min-w-fit w-fit gap-2 items-center rounded-2xl "
     >
       <img
         src={svgIcon}
