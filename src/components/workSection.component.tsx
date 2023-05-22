@@ -11,9 +11,9 @@ const frontendDeveloper = [
 
 const WorkSection = () => {
   return (
-    <div>
-      <div>
-        <h1>Work experience</h1>
+    <div className="m-1 p-1 border-2 border-gray-300 rounded-lg">
+      <div className="flex flex-row gap-8">
+        <h1 className="font-bold">Work experience</h1>
         <div> 5+ years of experience</div>
       </div>
       <Work heading={"hi"} content={freelancer} logos={["1", "2"]} />
