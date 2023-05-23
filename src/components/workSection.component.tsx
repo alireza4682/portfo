@@ -1,4 +1,5 @@
 import Work from "./work.component";
+import { svgs } from "./data";
 
 const freelancer = [
   "used React's best practices, code splitting and render optimization to make our customer's websites load 30% faster and 15% smoother.",
@@ -8,16 +9,21 @@ const freelancer = [
 const frontendDeveloper = [
   "worked with 20+ customers to improve their website's responsiveness and load time.",
 ];
+let fourthJobLogosNames = ["Typescript, React"];
+let fourthJobLogosSvgs = svgs
+  .filter((item) => fourthJobLogosNames.includes(item.title))
+  ?.map((i) => i.route.substring(1));
 
 const WorkSection = () => {
+  console.log(fourthJobLogosSvgs);
   return (
     <div className="m-1 p-1 border-2 border-gray-300 rounded-lg">
       <div className="flex flex-row gap-8">
         <h1 className="font-bold">Work experience</h1>
         <div> 5+ years of experience</div>
       </div>
-      <Work heading={"hi"} content={freelancer} logos={["1", "2"]} />
-      <Work heading={"hi"} content={frontendDeveloper} logos={["3", "4"]} />
+      <Work heading={"hi"} content={freelancer} logos={fourthJobLogosSvgs} />
+      <Work heading={"bye"} content={frontendDeveloper} logos={["3", "4"]} />
     </div>
   );
 };
