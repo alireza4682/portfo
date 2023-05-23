@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+const modules = import.meta.glob("./library/*.svg");
 
 type Twork = {
   heading: string;
@@ -8,9 +8,6 @@ type Twork = {
 
 const Work = (props: Twork) => {
   const { heading, content, logos } = props;
-  useEffect(()=>{
-  logos.forEach((item) => {import(`./library/${item}.svg`); console.log(item)})
-  },[])
 
   return (
     <div>
@@ -21,9 +18,10 @@ const Work = (props: Twork) => {
         ))}
       </div>
       <div>
-        {logos.map((l) => (
-          <img src={l} alt={l} />
-        ))}
+        {logos.map((l, idx) => {
+          const logoToRender = modules[`./library/${l}.svg`];
+          return <img src={modules[`./library/${l}.svg`]} alt={l} key={idx} />;
+        })}
       </div>
     </div>
   );
