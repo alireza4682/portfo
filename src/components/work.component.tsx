@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 type Twork = {
   heading: string;
   content: string[];
@@ -6,7 +8,9 @@ type Twork = {
 
 const Work = (props: Twork) => {
   const { heading, content, logos } = props;
-  logos.forEach((item) => import(`./library/${item}.svg`));
+  useEffect(()=>{
+  logos.forEach((item) => {import(`./library/${item}.svg`); console.log(item)})
+  },[])
 
   return (
     <div>
@@ -18,7 +22,7 @@ const Work = (props: Twork) => {
       </div>
       <div>
         {logos.map((l) => (
-          <img src={l} alt={l} key={l} />
+          <img src={l} alt={l} />
         ))}
       </div>
     </div>
