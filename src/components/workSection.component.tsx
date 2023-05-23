@@ -6,13 +6,13 @@ const freelancer = [
   "with writing unit tests, using storybook.js and migrating from redux to redux toolkit, median time to design and develop components was improved by 20%.",
 ];
 
-const frontendDeveloper = [
-  "worked with 20+ customers to improve their website's responsiveness and load time.",
-];
-let fourthJobLogosNames = ["Typescript, React"];
+// const frontendDeveloper = [
+//   "worked with 20+ customers to improve their website's responsiveness and load time.",
+// ];
+let fourthJobLogosNames = ["TypeScript", "React"];
 let fourthJobLogosSvgs = svgs
   .filter((item) => fourthJobLogosNames.includes(item.title))
-  ?.map((i) => i.route.substring(1));
+  ?.map((i) => i.route.replace("/library/", "").replace(".svg", ""));
 
 const WorkSection = () => {
   console.log(fourthJobLogosSvgs);
@@ -23,7 +23,7 @@ const WorkSection = () => {
         <div> 5+ years of experience</div>
       </div>
       <Work heading={"hi"} content={freelancer} logos={fourthJobLogosSvgs} />
-      <Work heading={"bye"} content={frontendDeveloper} logos={["3", "4"]} />
+      {/* <Work heading={"bye"} content={frontendDeveloper} logos={["3", "4"]} /> */}
     </div>
   );
 };
